@@ -1,9 +1,11 @@
 name: MSDO windows-latest
 on:
   push:
-    branches:
-      - main
-
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+  
 jobs:
   sample:
     name: Microsoft Security DevOps Analysis
